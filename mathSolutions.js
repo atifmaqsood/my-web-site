@@ -20,12 +20,25 @@ function checkPalindrome(userInput) {
     const reverseString = reverseArrayValue.join('');
 
     // check whether a string is palindrome or not
-    if (userInput == reverseString) {
-        console.log("It is a palindrome");
+    if(userInput.length <= 10){
+
+        if (userInput == reverseString) {
+            console.log("It is a palindrome");
+            document.getElementById("result").innerHTML;
+            alert("It is a palindrome");
+
+        }
+        else{
+            console.log("It is not a palindrome");
+            document.getElementById("result").innerHTML;
+            alert("It is not a palindrome");
+        }
     }
     else{
-        console.log("It is not a palindrome");
-    }
+console.log("hello");
+document.getElementById("result").innerHTML;
+alert("Given string should be of 10 characters");    }
+    
 
     // take input
     // const userInput = prompt('Enter a value ');
