@@ -1,7 +1,15 @@
+document.getElementById("btn").addEventListener('click', function(){
+
+let userInput = document.getElementById("userInput").value;
+checkPalindrome(userInput)
+
+})
+
 // function to check if the string is palindrome or not
 
 function checkPalindrome(userInput) {
-    
+   
+  
     // converting string into array
     const arrayValues = userInput.split('');
    
@@ -20,9 +28,9 @@ function checkPalindrome(userInput) {
     }
 
     // take input
-    const userInput = prompt('Enter a value ');
+    // const userInput = prompt('Enter a value ');
 
-    checkPalindrome(userInput);
+
 
 
 }
